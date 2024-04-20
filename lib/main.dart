@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:phonepat/Service/HomePageProvider.dart';
+import 'package:phonepat/Providers/HomePageProvider.dart';
+
 import 'package:provider/provider.dart';
 import 'package:phonepat/pages/HomePage/home.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
           create: (context) => HomePageProvider(),
         ),
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: HomePage(),
       ),

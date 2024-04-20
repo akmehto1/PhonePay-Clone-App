@@ -14,8 +14,10 @@ class _TransforMoneyState extends State<TransforMoney> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final width = size.width;
+    final height=size.height;
+
     return Container(
-      height:170,
+      height:height*.22,
       margin:EdgeInsets.all(10),
       decoration:BoxDecoration(
           color:Colors.white,
@@ -53,7 +55,7 @@ class _TransforMoneyState extends State<TransforMoney> {
                 Text("UPI ID:9354983360@ybl",style:TextStyle(color:Colors.grey[700]),),
                 SizedBox(width:150,),
                 Icon(Icons.arrow_forward_ios,size:17,),
-                SizedBox(width:10)
+                SizedBox(width:width*.01)
               ],
             ),
           )

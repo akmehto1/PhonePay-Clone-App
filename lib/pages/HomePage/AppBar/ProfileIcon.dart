@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:phonepat/Service/HomePageProvider.dart';
 
-Widget ProfileIcon(homePageProvider){
+
+Widget ProfileIcon(){
     return Stack(
       children: [
-        !homePageProvider.pick_profile_image?Icon(Icons.account_circle,color:Colors.white70,size:55,):Container(
-          height:20,
-          width:30,
+       Container(
+          height:45,
+          width:45,
           decoration:BoxDecoration(
+            borderRadius:BorderRadius.circular(10.0),
             image:DecorationImage(
-              image:AssetImage('assets/images/profile.jpg'),
+              fit:BoxFit.cover,
+              image:AssetImage('assets/images/profile2.png'),
             )
           ),
         ),
         Positioned(
             bottom:0,
-            right:0,
+            right:14,
             child:Container(
               width:25,
-              height:25,
-              child:Image.asset('assets/images/india.png',),
+              height:30,
+              decoration:BoxDecoration(
+                borderRadius:BorderRadius.circular(20.0),
+                image:DecorationImage(
+                  image:AssetImage('assets/images/india.png')
+                )
+              ),
+
             ))
       ],
     );

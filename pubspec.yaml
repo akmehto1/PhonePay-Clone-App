@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.2.1
   provider: ^6.1.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +66,9 @@ flutter:
     - assets/images/profile.jpg
     - assets/images/
     - assets/images/insurance/
+    - assets/images/appbar/
+    - assets/images/NotificationPage/
+    - assets/images/transactions/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

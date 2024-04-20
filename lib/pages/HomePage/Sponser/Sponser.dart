@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:phonepat/pages/HomePage/Sponser/customIcon.dart';
-import 'package:phonepat/utlis/CustomImage.dart';
+import 'package:phonepat/utlis/widgets/CustomImage.dart';
 
 class Sponser extends StatelessWidget {
   const Sponser({super.key});

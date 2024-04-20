@@ -8,11 +8,14 @@ final Icon icon;
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final width = size.width;
+    final height=size.height;
     return Container(
-      width:120,
+      width:width*.32,
       height:70,
       decoration:BoxDecoration(
-          color:Color.fromRGBO(89, 138, 222,1),
+          color:Color.fromRGBO(88, 138, 220,1),
         borderRadius:BorderRadius.circular(10.0)
       ),
       child:Column(

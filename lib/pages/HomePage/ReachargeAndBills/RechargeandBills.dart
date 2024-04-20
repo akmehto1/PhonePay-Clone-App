@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:phonepat/utlis/CustomImage.dart';
+import 'package:phonepat/utlis/widgets/CustomImage.dart';
 
 class RechargeAndBills extends StatefulWidget {
   const RechargeAndBills({super.key});

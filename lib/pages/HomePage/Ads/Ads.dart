@@ -24,7 +24,8 @@ class _AdsState extends State<Ads> {
       child:Stack(
         children: [
           Container(
-          height:250,
+              height:250,
+          margin:EdgeInsets.symmetric(vertical:10.0),
           child:PageView.builder(
               itemCount:images.length,
               pageSnapping: true,
@@ -74,9 +75,12 @@ class _AdsState extends State<Ads> {
   Widget makeItem() {
   return AspectRatio(aspectRatio:1/.88,
   child:Container(
+    width:1000,
+    margin:EdgeInsets.only(left:10.0),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(5),
       image: const DecorationImage(
+        fit:BoxFit.cover,
         image: AssetImage('assets/images/ad1.jpeg'),
       ),
     ),
